@@ -20,12 +20,27 @@ A responsive To-Do List web application built using HTML5, CSS3 and JavaScript.
 
 ## Project Structure
 
-```text
 todo-list-js/
+├── screenshots/
+│   ├── todo-main.png
+│   └── todo-functionality.png
 ├── index.html
 ├── script.js
 └── style.css
-```
+
+## Live Demo
+
+[View Live Demo](https://mainkrsna-dot.github.io/todo-list-js/)
+
+## Screenshots
+
+### Main Interface
+
+![To-Do List Main Interface](screenshots/todo-main.png)
+
+### Task Management
+
+![To-Do List Task Management](screenshots/todo-functionality.png)
 
 ## How to Run
 
