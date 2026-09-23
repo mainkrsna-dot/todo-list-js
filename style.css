@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #5f4b8b, #8f68b4);
+  color: #fff;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 520px;
+  padding: 24px;
+}
+
+.todo-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+  padding: 32px;
+}
+
+.todo-header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.todo-header p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 24px;
+}
+
+.todo-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.todo-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.todo-form button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 14px;
+  background: #ffd166;
+  color: #4f2a79;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.todo-form button:hover {
+  transform: translateY(-1px);
+  background: #ffcb4d;
+}
+
+.todo-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.todo-item span {
+  flex: 1;
+  margin-left: 12px;
+  color: #fff;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-item button {
+  border: none;
+  background: transparent;
+  color: #ff7b7b;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.empty-message {
+  margin-top: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 480px) {
+  .todo-card {
+    padding: 20px;
+  }
+
+  .todo-form {
+    grid-template-columns: 1fr;
+  }
+}
